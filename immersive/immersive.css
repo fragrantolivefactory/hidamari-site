@@ -247,6 +247,11 @@ a {
   border-radius: 999px;
 }
 
+.story-topbar a {
+  font-size: 0.84rem;
+  color: rgba(246, 238, 231, 0.72);
+}
+
 .story-progress {
   display: flex;
   align-items: center;
@@ -406,12 +411,20 @@ a {
   bottom: 1rem;
   transform: translateX(-50%);
   z-index: 5;
-  padding: 0.7rem 1rem;
+  padding: 0.55rem 0.9rem;
   border-radius: 999px;
-  background: rgba(15, 11, 10, 0.6);
-  border: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.9rem;
+  background: rgba(15, 11, 10, 0.44);
+  border: 1px solid rgba(255, 240, 226, 0.08);
+  color: rgba(246, 238, 231, 0.5);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.story-hint.is-hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(8px);
+  pointer-events: none;
 }
 
 .story-pagecount {
@@ -429,6 +442,18 @@ a {
 .sound-button[aria-pressed="true"] {
   background: rgba(240, 179, 127, 0.16);
   border-color: rgba(240, 179, 127, 0.28);
+}
+
+.sound-button {
+  width: 2.1rem;
+  height: 2.1rem;
+  min-width: 2.1rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(246, 238, 231, 0.7);
+  font-size: 0.95rem;
 }
 
 .stage-amber .story-overlay {
@@ -507,20 +532,98 @@ a {
     padding: 2rem 1.2rem;
   }
 
+  .story-topbar {
+    gap: 0.45rem;
+    padding: 0.65rem 0.7rem;
+  }
+
+  .story-topbar a {
+    font-size: 0.74rem;
+    padding: 0.48rem 0.7rem;
+  }
+
+  .sound-button {
+    width: 1.9rem;
+    height: 1.9rem;
+    min-width: 1.9rem;
+    font-size: 0.82rem;
+  }
+
+  .story-progress {
+    gap: 0.24rem;
+  }
+
+  .story-progress span {
+    width: min(6.5vw, 1.2rem);
+  }
+
+  .story-frame {
+    padding: 3.7rem 0.7rem 3.3rem;
+  }
+
   .scene {
     width: min(100%, 42rem);
-    padding: 1.25rem 1.1rem 1.1rem;
+    max-height: calc(100vh - 7.6rem);
+    overflow: auto;
+    padding: 1.05rem 0.95rem 1rem;
+    border-radius: 1.15rem;
+    -webkit-overflow-scrolling: touch;
   }
 
   .scene-title {
     padding: 0 0.4rem;
+    max-height: none;
+    overflow: visible;
   }
 
-  .story-topbar {
-    padding: 0.8rem;
+  .scene h1 {
+    font-size: clamp(2.2rem, 11vw, 3.6rem);
+    margin-bottom: 0.65rem;
+  }
+
+  .scene-titlemark {
+    padding: 0 0.4rem 0.2rem;
+    font-size: clamp(2.9rem, 15vw, 4.5rem);
+    line-height: 0.9;
+  }
+
+  .scene-titlemark::after {
+    top: -0.45rem;
+    height: 6.5rem;
+  }
+
+  .title-kicker {
+    margin-bottom: 0.65rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+  }
+
+  .scene-subtitle {
+    margin-top: 0.7rem;
+    max-width: 20rem;
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  .scene-text {
+    font-size: 0.96rem;
+    line-height: 1.72;
   }
 
   .nav-zone {
-    top: 4.2rem;
+    top: 3.8rem;
+  }
+
+  .story-pagecount {
+    bottom: 0.72rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+  }
+
+  .story-hint {
+    bottom: 2rem;
+    font-size: 0.66rem;
+    padding: 0.45rem 0.7rem;
+    letter-spacing: 0.08em;
   }
 }

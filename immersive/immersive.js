@@ -2,7 +2,6 @@ const scenes = Array.from(document.querySelectorAll(".scene"));
 const bgImage = document.querySelector(".story-bg img");
 const progressBars = Array.from(document.querySelectorAll(".story-progress span"));
 const hint = document.querySelector(".story-hint");
-const hintButton = document.querySelector(".hint-button");
 const soundButton = document.querySelector(".sound-button");
 const prevButton = document.querySelector(".nav-prev");
 const nextButton = document.querySelector(".nav-next");
@@ -127,26 +126,10 @@ if (scenes.length > 0 && bgImage) {
     }
   });
 
-  hintButton?.addEventListener("click", () => {
-    if (!hint) {
-      return;
-    }
-
-    const isHidden = hint.hasAttribute("hidden");
-    if (isHidden) {
-      hint.removeAttribute("hidden");
-      window.setTimeout(() => {
-        hint.setAttribute("hidden", "");
-      }, 2400);
-    } else {
-      hint.setAttribute("hidden", "");
-    }
-  });
-
   soundButton?.addEventListener("click", async () => {
     audioEnabled = !audioEnabled;
     soundButton.setAttribute("aria-pressed", String(audioEnabled));
-    soundButton.textContent = audioEnabled ? "Sound On" : "Sound Off";
+    soundButton.textContent = audioEnabled ? "◉" : "◌";
 
     if (audioEnabled) {
       const context = ensureAudioContext();
@@ -156,6 +139,12 @@ if (scenes.length > 0 && bgImage) {
       playStepTone("next");
     }
   });
+
+  if (hint) {
+    window.setTimeout(() => {
+      hint.classList.add("is-hidden");
+    }, 2200);
+  }
 
   render();
 }
