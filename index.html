@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidamari Stories</title>
+    <meta
+      name="description"
+      content="3つの気配からはじまる、余韻のための短編サイト。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="background-glow background-glow-left"></div>
+    <div class="background-glow background-glow-right"></div>
+
+    <header class="hero">
+      <nav class="topbar">
+        <span class="brand">Hidamari Stories</span>
+        <a href="#stories" class="nav-link">Enter</a>
+      </nav>
+
+      <div class="hero-card reveal">
+        <p class="eyebrow">Three doors, three aftertastes</p>
+        <h1>
+          画像の奥にある、
+          <span>小さな物語。</span>
+        </h1>
+        <p class="lead">
+          説明はできるだけ少なく。残るのは、光と気配と、読み終えたあとに少しだけ胸へ残るもの。
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section reveal" id="stories">
+        <div class="section-heading">
+          <p class="eyebrow">Stories</p>
+          <h2>触れた順に、余韻が変わる。</h2>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card story-card">
+            <a class="story-link" href="./stories/amber-window.html">
+              <div class="work-visual">
+                <img
+                  src="./image/Amber Window.png"
+                  alt="午後の逆光が差し込むクラシックホテルの客室で、リネン越しの光の中に立つ女性"
+                />
+              </div>
+              <div class="work-copy">
+                <p class="work-index">01</p>
+                <h3>Amber Window</h3>
+                <p class="story-hook">
+                  三年前に別れた人から届いた、ひと晩だけ有効な部屋番号。
+                </p>
+                <span class="story-cta">物語を読む</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card story-card">
+            <a class="story-link" href="./stories/rose-after-rain.html">
+              <div class="work-visual">
+                <img
+                  src="./image/Rose After Rain.png"
+                  alt="雨粒のついた窓辺で、淡いローズカラーのドレスをまとい静かに視線を落とす女性"
+                />
+              </div>
+              <div class="work-copy">
+                <p class="work-index">02</p>
+                <h3>Rose After Rain</h3>
+                <p class="story-hook">
+                  雨のあとだけ会える人がいて、名前を呼べたことはまだ一度もない。
+                </p>
+                <span class="story-cta">物語を読む</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card story-card">
+            <a class="story-link" href="./stories/nocturne-tea-room.html">
+              <div class="work-visual">
+                <img
+                  src="./image/Nocturne Tea Room-b.png"
+                  alt="深い赤茶のラウンジで、湯気の立つ紅茶と静かな会話の気配が漂う夜のティールーム"
+                />
+              </div>
+              <div class="work-copy">
+                <p class="work-index">03</p>
+                <h3>Nocturne Tea Room</h3>
+                <p class="story-hook">
+                  午前零時を過ぎると、もう帰れない人だけのティールームが開く。
+                </p>
+                <span class="story-cta">物語を読む</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section quote reveal">
+        <blockquote>
+          “物語は、説明より先に温度で思い出される。”
+        </blockquote>
+      </section>
+
+      <section class="section reveal" id="patterns">
+        <div class="section-heading">
+          <p class="eyebrow">Pattern Guide</p>
+          <h2>同じ世界観を、違う見せ方で。</h2>
+        </div>
+        <div class="pattern-grid">
+          <a class="pattern-card panel" href="./variants/sensual/">
+            <p class="pattern-name">Sensual Pattern</p>
+            <h3>官能寄り</h3>
+            <p>
+              暖色と余熱を強めた見せ方。肌感、距離感、息づかいのような密度で読ませるパターンです。
+            </p>
+          </a>
+          <a class="pattern-card panel" href="./variants/literary/">
+            <p class="pattern-name">Literary Pattern</p>
+            <h3>文学寄り</h3>
+            <p>
+              余白と文体を主役にした見せ方。紙のような静けさの中で、言葉の残響を味わうパターンです。
+            </p>
+          </a>
+          <a class="pattern-card panel" href="./variants/mystery/">
+            <p class="pattern-name">Mystery Pattern</p>
+            <h3>ミステリー寄り</h3>
+            <p>
+              暗がりと情報の欠落で引っ張る見せ方。気配や違和感を手がかりに進むパターンです。
+            </p>
+          </a>
+          <a class="pattern-card panel" href="./immersive/">
+            <p class="pattern-name">Immersive Pattern</p>
+            <h3>操作しながら読む</h3>
+            <p>
+              Enter から入り、物語を選び、左右タップで進む体験型。文章と画像演出をシーン単位で見せます。
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

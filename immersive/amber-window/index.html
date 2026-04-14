@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amber Window | Immersive</title>
+    <meta
+      name="description"
+      content="左右タップで進む、Amber Window のシネマティック版。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../immersive.css?v=4" />
+    <script defer src="../immersive.js?v=4"></script>
+  </head>
+  <body class="story-stage stage-amber" data-story="amber">
+    <div class="story-bg">
+      <img src="../../image/Amber Window.png" alt="" />
+    </div>
+    <div class="story-overlay"></div>
+
+    <header class="story-topbar">
+      <a href="../select.html">Select</a>
+      <div class="story-progress" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <button class="sound-button" type="button" aria-pressed="false">Sound Off</button>
+      <button class="hint-button" type="button">Hint</button>
+    </header>
+
+    <main class="story-frame">
+      <section class="scene scene-title is-active" data-focus="0.52 0.34" data-scale="1.06" data-tone="gold">
+        <p class="title-kicker">A Room Reopened</p>
+        <h1 class="scene-titlemark">Amber Window</h1>
+        <p class="scene-subtitle">午後三時、部屋番号 417。</p>
+      </section>
+
+      <section class="scene" data-focus="0.52 0.36" data-scale="1.1" data-tone="amber">
+        <p class="scene-text">
+          朝のフロントで渡された封筒には、差出人も鍵もなく、ただ部屋番号 417 だけが残されていた。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.56 0.42" data-scale="1.18" data-tone="amber">
+        <p class="scene-text">
+          その数字は、三年前に自分から終わらせた恋の最後の夜と、まったく同じだった。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.48 0.22" data-scale="1.24" data-tone="gold">
+        <p class="scene-text">
+          ノックの返事は言葉ではなく、薄いカーテンが擦れる音で、午後の光が先にこちらへ触れてきた。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.5 0.28" data-scale="1.3" data-tone="soft">
+        <p class="scene-text">
+          窓辺の彼女は振り向かないまま立っていて、肩に落ちる琥珀色だけが、まだ終わっていない記憶を照らしていた。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.63 0.45" data-scale="1.16" data-tone="amber">
+        <p class="scene-text">
+          触れたかったのではない。あのとき手放したものに、いまの自分がもう一度名前を与えたかった。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.56 0.26" data-scale="1.08" data-tone="fade">
+        <p class="scene-text">
+          夕方の光が消えるころ、彼女は「これでよかったの」と言った。その正しさだけが、あとからいちばん遅く胸へ届いた。
+        </p>
+      </section>
+    </main>
+
+    <button class="nav-zone nav-prev" aria-label="前のシーンへ"></button>
+    <button class="nav-zone nav-next" aria-label="次のシーンへ"></button>
+    <p class="story-pagecount" aria-live="polite">1 / 7</p>
+    <div class="story-hint" hidden>右半分で進む / 左半分で戻る / キーボードは ← →</div>
+  </body>
+</html>

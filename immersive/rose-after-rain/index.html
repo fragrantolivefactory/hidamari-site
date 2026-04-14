@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rose After Rain | Immersive</title>
+    <meta
+      name="description"
+      content="左右タップで進む、Rose After Rain のシネマティック版。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../immersive.css?v=4" />
+    <script defer src="../immersive.js?v=4"></script>
+  </head>
+  <body class="story-stage stage-rose" data-story="rose">
+    <div class="story-bg">
+      <img src="../../image/Rose After Rain.png" alt="" />
+    </div>
+    <div class="story-overlay"></div>
+
+    <header class="story-topbar">
+      <a href="../select.html">Select</a>
+      <div class="story-progress" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <button class="sound-button" type="button" aria-pressed="false">Sound Off</button>
+      <button class="hint-button" type="button">Hint</button>
+    </header>
+
+    <main class="story-frame">
+      <section class="scene scene-title is-active" data-focus="0.5 0.23" data-scale="1.03" data-tone="rose">
+        <p class="title-kicker">The City After Rain</p>
+        <h1 class="scene-titlemark">Rose After Rain</h1>
+        <p class="scene-subtitle">名前を知らないまま、思い出してしまう人。</p>
+      </section>
+
+      <section class="scene" data-focus="0.5 0.26" data-scale="1.08" data-tone="rose">
+        <p class="scene-text">
+          彼女を見かけるのは決まって雨が止んだあとの街で、舗道の色がまだ水を抱えている時間だけだった。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.44 0.24" data-scale="1.16" data-tone="mist">
+        <p class="scene-text">
+          ガラス越しの横顔は、こちらを見ているようで見ていない。まるで景色のほうが先に彼女を知っているみたいだった。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.56 0.35" data-scale="1.22" data-tone="rose">
+        <p class="scene-text">
+          雨上がりのたびに私は窓の外を探すようになり、会いたい相手より、会えるかもしれない街の色を待つようになった。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.48 0.19" data-scale="1.28" data-tone="soft">
+        <p class="scene-text">
+          五度目に交わした会話でも、彼女の名前だけは聞けなかった。名前を知れば、この曖昧な美しさが現実になりすぎる気がした。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.42 0.3" data-scale="1.14" data-tone="mist">
+        <p class="scene-text">
+          人は相手そのものより、その人が現れる季節や匂いや光を先に愛してしまうのかもしれない。
+        </p>
+      </section>
+
+      <section class="scene" data-focus="0.5 0.22" data-scale="1.06" data-tone="fade">
+        <p class="scene-text">
+          いまでも雨が止むと窓の外を見る。彼女がいるかどうかより、あの余韻がまだ街に残っているかを確かめるために。
+        </p>
+      </section>
+    </main>
+
+    <button class="nav-zone nav-prev" aria-label="前のシーンへ"></button>
+    <button class="nav-zone nav-next" aria-label="次のシーンへ"></button>
+    <p class="story-pagecount" aria-live="polite">1 / 7</p>
+    <div class="story-hint" hidden>右半分で進む / 左半分で戻る / キーボードは ← →</div>
+  </body>
+</html>

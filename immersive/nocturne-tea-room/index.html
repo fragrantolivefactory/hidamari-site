@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nocturne Tea Room | Immersive</title>
+    <meta
+      name="description"
+      content="左右タップで進む、Nocturne Tea Room のシネマティック版。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../immersive.css?v=4" />
+    <script defer src="../immersive.js?v=4"></script>
+  </head>
+  <body class="story-stage stage-night" data-story="night">
+    <div class="story-bg">
+      <img src="../../image/Nocturne Tea Room-b.png" alt="" />
+    </div>
+    <div class="story-overlay"></div>
+
+    <header class="story-topbar">
+      <a href="../select.html">Select</a>
+      <div class="story-progress" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <button class="sound-button" type="button" aria-pressed="false">Sound Off</button>
+      <button class="hint-button" type="button">Hint</button>
+    </header>
+
+    <main class="story-frame">
+      <section class="scene scene-title is-active" data-image="../../image/Nocturne Tea Room-a.png" data-focus="0.48 0.64" data-scale="1.02" data-tone="night">
+        <p class="title-kicker">Midnight Reservation</p>
+        <h1 class="scene-titlemark">Nocturne Tea Room</h1>
+        <p class="scene-subtitle">帰れない人のための、最後の一杯。</p>
+      </section>
+
+      <section class="scene" data-image="../../image/Nocturne Tea Room-a.png" data-focus="0.38 0.66" data-scale="1.04" data-tone="night">
+        <p class="scene-text">
+          そのティールームに入れるのは、終電を逃した人ではなく、その日帰る理由をひとつ失った人だけだった。
+        </p>
+      </section>
+
+      <section class="scene" data-image="../../image/Nocturne Tea Room-a.png" data-focus="0.48 0.55" data-scale="1.12" data-tone="glow">
+        <p class="scene-text">
+          八階の記録は台帳にないのに、零時を過ぎるとエレベーターには時々、存在しないはずの灯りがひとつ増える。
+        </p>
+      </section>
+
+      <section class="scene" data-image="../../image/Nocturne Tea Room-b.png" data-focus="0.62 0.34" data-scale="1.2" data-tone="night">
+        <p class="scene-text">
+          店の中は低い照度と深い赤茶に満ち、客はみな、自分の声が少しだけ小さくなる明るさで座っていた。
+        </p>
+      </section>
+
+      <section class="scene" data-image="../../image/Nocturne Tea Room-b.png" data-focus="0.46 0.72" data-scale="1.28" data-tone="glow">
+        <p class="scene-text">
+          私の前に置かれた琥珀色の紅茶は、まだ起きていない別れの匂いがした。飲む前から喉元が熱かった。
+        </p>
+      </section>
+
+      <section class="scene" data-image="../../image/Nocturne Tea Room-b.png" data-focus="0.8 0.36" data-scale="1.18" data-tone="night">
+        <p class="scene-text">
+          向かいにいた女は「ここでは忘れたいものではなく、忘れてはいけないものが消えるの」とだけ言って笑った。
+        </p>
+      </section>
+
+      <section class="scene" data-image="../../image/Nocturne Tea Room-a.png" data-focus="0.5 0.58" data-scale="1.05" data-tone="fade">
+        <p class="scene-text">
+          店を出たあと、八階はビルのどこにもなかった。それでも手の中には、失くした痛みだけが妙に美しく残っていた。
+        </p>
+      </section>
+    </main>
+
+    <button class="nav-zone nav-prev" aria-label="前のシーンへ"></button>
+    <button class="nav-zone nav-next" aria-label="次のシーンへ"></button>
+    <p class="story-pagecount" aria-live="polite">1 / 7</p>
+    <div class="story-hint" hidden>右半分で進む / 左半分で戻る / キーボードは ← →</div>
+  </body>
+</html>

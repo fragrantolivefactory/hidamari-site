@@ -1,0 +1,126 @@
+:root {
+  --paper: #f2ede3;
+  --paper-deep: #e7dfd1;
+  --ink: #2f2a27;
+  --muted: #75685f;
+  --rose: #a26d72;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Noto Serif JP", serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, rgba(162, 109, 114, 0.12), transparent 22%),
+    linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+}
+
+.page {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+}
+
+.side-note {
+  padding-top: 3rem;
+}
+
+.side-note p {
+  margin: 0 0 0.8rem;
+  color: var(--rose);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.74rem;
+}
+
+.side-note span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.8;
+  writing-mode: vertical-rl;
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.6rem, 8vw, 6rem);
+  line-height: 0.94;
+}
+
+.lead {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 440px) minmax(0, 1fr);
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.visual {
+  margin: 0;
+  position: sticky;
+  top: 2rem;
+}
+
+.visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 14px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 20px 60px rgba(77, 58, 54, 0.18);
+}
+
+.story {
+  max-width: 42rem;
+}
+
+.story p {
+  margin: 0 0 1.3rem;
+  line-height: 2.15;
+  font-size: 1rem;
+}
+
+.story p:first-child::first-letter {
+  float: left;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4.8rem;
+  line-height: 0.9;
+  padding-right: 0.45rem;
+  color: var(--rose);
+}
+
+@media (max-width: 900px) {
+  .page,
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-note {
+    padding-top: 0;
+  }
+
+  .side-note span {
+    writing-mode: horizontal-tb;
+  }
+
+  .visual {
+    position: static;
+  }
+}
