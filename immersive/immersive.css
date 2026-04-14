@@ -557,6 +557,10 @@ a {
     width: min(6.5vw, 1.2rem);
   }
 
+  .story-progress {
+    display: none;
+  }
+
   .story-frame {
     padding: 3.7rem 0.7rem 3.3rem;
   }
@@ -614,8 +618,9 @@ a {
   }
 
   .scene-text {
-    font-size: 0.96rem;
-    line-height: 1.72;
+    font-size: 0.92rem;
+    line-height: 1.66;
+    letter-spacing: 0.01em;
   }
 
   .nav-zone {
